@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+
+  before_action :authenticate_user! only: [:new, :show, :create]
+
+
   def new
     @post = Post.new
   end
