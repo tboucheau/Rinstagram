@@ -15,9 +15,3 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
-@include media-breakpoint-only(lg) {
-      .card-columns {
-        column-count: 4;
-    }
-}
